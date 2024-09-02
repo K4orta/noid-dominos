@@ -7,6 +7,20 @@ export class Store {
   }
 
   async menu() {
-    return new Menu({ storeId: this.id });
+    const response = await fetch(
+      `https://order.dominos.com/power/store/${this.id}/menu?lang=en&structured=true`,
+      {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+          'content-type': 'application/json',
+        },
+      }
+    );
+
+    return new Menu({
+      storeId: this.id,
+      ...(await response.json()),
+    });
   }
 }

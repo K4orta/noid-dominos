@@ -2,10 +2,6 @@ import camelcaseKeys from 'camelcase-keys';
 import { writeFile } from 'node:fs/promises';
 import { PizzaTopping } from './pizza-topping';
 
-export type MenuOptions = {
-  storeId: string;
-};
-
 export type MenuCategory = {
   code: string;
   name: string;
@@ -80,8 +76,6 @@ export type DominosMenu = {
 };
 
 export class Menu {
-  public storeId: string;
-  public isInitialized: boolean;
   public data?: DominosMenu;
   public pizza: {
     crusts: {
@@ -95,30 +89,12 @@ export class Menu {
     toppings: PizzaTopping[];
   };
 
-  constructor(options: MenuOptions) {
-    this.storeId = options.storeId;
-    this.isInitialized = false;
+  constructor(options: unknown) {
     this.pizza = {
       crusts: [],
       toppings: [],
     };
-  }
-
-  async load() {
-    const response = await fetch(
-      `https://order.dominos.com/power/store/${this.storeId}/menu?lang=en&structured=true`,
-      {
-        method: 'GET',
-        headers: {
-          accept: 'application/json',
-          'content-type': 'application/json',
-        },
-      }
-    );
-
-    this.parse(await response.json());
-
-    this.isInitialized = true;
+    this.parse(options);
   }
 
   parse(payload: unknown) {
@@ -126,12 +102,7 @@ export class Menu {
       exclude: [new RegExp('^[^a-z]*$'), new RegExp('^\\w{2}$')],
       deep: true,
     }) as DominosMenu;
-    // writeFile(
-    //   'src/lib/models/__stubs__/menu_parsed.json',
-    //   JSON.stringify(this.data, null, 2),
-    //   { encoding: 'utf8' }
-    // );
-    // Populate crusts
+
     const crusts = this.data.products['S_PIZZA'].variants.map((variant) => {
       const crust = this.data?.variants[variant]!;
       const flavor = this.data?.flavors.pizza[crust.flavorCode]!;
