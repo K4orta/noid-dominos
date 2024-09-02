@@ -18,9 +18,6 @@ export class Store {
       }
     );
 
-    return new Menu({
-      storeId: this.id,
-      ...(await response.json()),
-    });
+    return new Menu(await response.json());
   }
 }
