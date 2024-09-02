@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig-base.json",
+    "compilerOptions": {
+      "paths": {
+        "@/test": ["./test"],
+        "@/test/*": ["./test/*"],
+      },
+      "noEmit": true,
+      "types": ["node"]
+    },
+    "include": ["src", "src/lib", "test", "**/*.spec.*"],
+  }

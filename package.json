@@ -1,0 +1,35 @@
+{
+  "name": "pizza-party",
+  "version": "0.1.0",
+  "description": "A Nodeless version of the Dominos package",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsup src/lib/index.ts"
+  },
+  "author": "Eric Wong",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "require": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "msw": "^2.3.5",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "camelcase-keys": "^9.1.3"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Bundler",
+      "sourceMap": true,
+      "declaration": true,
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "alwaysStrict": true,
+      "skipLibCheck": true,
+      "noUnusedLocals": true,
+      "noUncheckedIndexedAccess": true,
+      "moduleDetection": "force",
+      "verbatimModuleSyntax": true
+    }
+  }
