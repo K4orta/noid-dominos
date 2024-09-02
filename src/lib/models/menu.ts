@@ -1,5 +1,4 @@
 import camelcaseKeys from 'camelcase-keys';
-import { writeFile } from 'node:fs/promises';
 import { PizzaTopping } from './pizza-topping';
 
 export type MenuCategory = {
@@ -13,24 +12,6 @@ export type MenuCategory = {
 };
 
 export type DominosMenu = {
-  // categories: {
-  //   food: {
-  //     pizza: MenuCategory;
-  //     sandwich: MenuCategory;
-  //     pasta: MenuCategory;
-  //     wings: MenuCategory;
-  //     bread: MenuCategory;
-  //     gSalad: MenuCategory;
-  //     chips: MenuCategory;
-  //     drinks: MenuCategory;
-  //     dessert: MenuCategory;
-  //     dips: MenuCategory;
-  //     breadDipCombos: MenuCategory;
-  //     tots: MenuCategory;
-  //     sides: MenuCategory;
-  //   };
-  // };
-  // coupons: {};
   flavors: {
     pizza: Record<
       string,
