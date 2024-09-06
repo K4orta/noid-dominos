@@ -36,8 +36,10 @@ export class Pizza implements IPizza {
       options: {
         [this.sauce.code]: { '1/1': '1' },
         ...this.toppings.reduce((prev, current) => {
-          prev[current.code] = { '1/1': '1' };
-          return prev;
+          return {
+            ...prev,
+            ...current.toDominos(),
+          };
         }, {} as Record<string, any>),
       },
     };
