@@ -1,17 +1,23 @@
 {
-  "name": "pizza-party",
+  "name": "noid-pizza",
   "version": "0.1.0",
-  "description": "A Nodeless version of the Dominos package",
+  "description": "A Nodeless, Typescript version of the Dominos package",
   "scripts": {
     "test": "vitest",
-    "build": "tsup src/lib/index.ts"
+    "build": "tsup src/lib/index.ts",
+    "generate:constants": "tsx scripts/generate-constants"
   },
-  "author": "Eric Wong",
+  "author": "Eric Wong <k4orta@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k4orta/noid-pizza"
+  },
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "packageManager": "pnpm@9.7.1",
   "exports": {
     "import": {
       "types": "./dist/index.d.ts",
@@ -26,6 +32,7 @@
     "@types/node": "^22.5.0",
     "msw": "^2.3.5",
     "tsup": "^8.2.4",
+    "tsx": "^4.19.0",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
   },

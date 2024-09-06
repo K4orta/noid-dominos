@@ -1,5 +1,6 @@
-import camelcaseKeys from 'camelcase-keys';
 import { PizzaTopping } from './pizza-topping';
+import { PizzaCrust } from './pizza-crust';
+import { camelCaseDominos } from '../utils/camel-case-dominos';
 
 export type MenuCategory = {
   code: string;
@@ -59,14 +60,7 @@ export type DominosMenu = {
 export class Menu {
   public data?: DominosMenu;
   public pizza: {
-    crusts: {
-      code: string;
-      name: string;
-      description: string;
-      surcharge: string;
-      allowedCookingInstructions: string[];
-      availableToppings: string[];
-    }[];
+    crusts: PizzaCrust[];
     toppings: PizzaTopping[];
   };
 
@@ -79,24 +73,23 @@ export class Menu {
   }
 
   parse(payload: unknown) {
-    this.data = camelcaseKeys(payload as Record<string, unknown>, {
-      exclude: [new RegExp('^[^a-z]*$'), new RegExp('^\\w{2}$')],
-      deep: true,
-    }) as DominosMenu;
+    this.data = camelCaseDominos(
+      payload as Record<string, unknown>
+    ) as DominosMenu;
 
     const crusts = this.data.products['S_PIZZA'].variants.map((variant) => {
       const crust = this.data?.variants[variant]!;
       const flavor = this.data?.flavors.pizza[crust.flavorCode]!;
       const { name, availableToppings, surcharge, allowedCookingInstructions } =
         crust;
-      return {
+      return new PizzaCrust({
         code: variant,
         name,
         description: flavor.description,
         availableToppings: availableToppings.split(','),
         surcharge,
         allowedCookingInstructions: allowedCookingInstructions.split(','),
-      };
+      });
     });
     this.pizza.crusts = crusts;
     this.pizza.toppings = Object.values(this.data.toppings.pizza).map(

@@ -20,4 +20,14 @@ export class PizzaTopping implements IPizzaTopping {
     this.tags = options.tags;
     this.exclusivityGroup = options.exclusivityGroup;
   }
+
+  toJson(): IPizzaTopping {
+    return {
+      code: this.code,
+      name: this.name,
+      isLocal: this.isLocal,
+      tags: this.tags,
+      ...(this.exclusivityGroup && { exclusivityGroup: this.exclusivityGroup }),
+    };
+  }
 }
