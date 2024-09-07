@@ -39,7 +39,17 @@ describe('The Pizza model', () => {
     expect(pizza.sauce).toBe(honeyBbqSauce);
   });
 
-  test('it can render to json', () => {});
+  test('it can render to json', () => {
+    const pizza = new Pizza({
+      crust: largeHandTossedPizza,
+      sauce: robustInspiredTomatoSauce,
+      toppings: [cheese, pepperoni],
+    });
+
+    const pizzaJson = pizza.toJson();
+
+    expect(pizzaJson.crust.description).toContain('Garlic-seasoned crust');
+  });
 
   test('it can render to Dominos format', () => {
     const pizza = new Pizza({
@@ -49,7 +59,6 @@ describe('The Pizza model', () => {
     });
 
     const dominosItem = pizza.toDominos();
-    console.log(dominosItem);
     expect(dominosItem.code).toBe('14SCREEN');
     expect(dominosItem.options['X']).toEqual({ '1/1': '1' });
     expect(dominosItem.options['C']).toEqual({ '1/1': '1' });

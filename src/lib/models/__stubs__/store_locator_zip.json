@@ -1,0 +1,567 @@
+{
+    "Status": 0,
+    "Granularity": "PostalCode",
+    "Address": {
+        "Street": "",
+        "StreetNumber": "",
+        "StreetName": "",
+        "UnitType": "",
+        "UnitNumber": "",
+        "City": "",
+        "Region": "",
+        "PostalCode": "94122",
+        "CountyNumber": "",
+        "CountyName": ""
+    },
+    "Stores": [
+        {
+            "StoreID": "8418",
+            "IsDeliveryStore": false,
+            "Phone": "415-681-8100",
+            "AddressDescription": "3116 Noriega Street\nSan Francisco, CA 94116\nBetween 37TH AVE and 38TH AVE.",
+            "HolidaysDescription": "",
+            "HoursDescription": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+            "ServiceHoursDescription": {
+                "Carryout": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "Delivery": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "DriveUpCarryout": "Su-Sa 11:00am-11:00pm",
+                "DeliverToMe": "Su-Sa 10:30am-9:00pm"
+            },
+            "IsOnlineCapable": true,
+            "IsOnlineNow": true,
+            "IsNEONow": false,
+            "IsSpanish": true,
+            "LocationInfo": "Between 37TH AVE and 38TH AVE.",
+            "LanguageLocationInfo": {
+                "en": "Between 37TH AVE and 38TH AVE.",
+                "es": "Between 37TH AVE and 38TH AVE."
+            },
+            "AllowDeliveryOrders": true,
+            "AllowCarryoutOrders": true,
+            "AllowDuc": true,
+            "ServiceMethodEstimatedWaitMinutes": {
+                "Delivery": {
+                    "Min": 43,
+                    "Max": 58
+                },
+                "Carryout": {
+                    "Min": 15,
+                    "Max": 25
+                }
+            },
+            "StoreCoordinates": {
+                "StoreLatitude": "37.7534",
+                "StoreLongitude": "-122.497"
+            },
+            "AllowPickupWindowOrders": false,
+            "ContactlessDelivery": "AVAILABLE",
+            "ContactlessCarryout": "DISABLED",
+            "IsOpen": true,
+            "ServiceIsOpen": {
+                "Carryout": true,
+                "Delivery": true,
+                "DriveUpCarryout": true
+            },
+            "Address": {
+                "Street": "3116 Noriega Street",
+                "City": "San Francisco",
+                "Region": "CA",
+                "PostalCode": "94116"
+            }
+        },
+        {
+            "StoreID": "8421",
+            "IsDeliveryStore": false,
+            "Phone": "415-387-3030",
+            "AddressDescription": "5200 Geary Blvd Ste D\nSan Francisco, CA 94118\n",
+            "HolidaysDescription": "",
+            "HoursDescription": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+            "ServiceHoursDescription": {
+                "Carryout": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "Delivery": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "DriveUpCarryout": "Su-Sa 12:00pm-10:00pm",
+                "DeliverToMe": "Su-Sa 10:30am-9:00pm"
+            },
+            "IsOnlineCapable": true,
+            "IsOnlineNow": true,
+            "IsNEONow": false,
+            "IsSpanish": true,
+            "LocationInfo": "",
+            "LanguageLocationInfo": {
+                "en": "",
+                "es": ""
+            },
+            "AllowDeliveryOrders": true,
+            "AllowCarryoutOrders": true,
+            "AllowDuc": true,
+            "ServiceMethodEstimatedWaitMinutes": {
+                "Delivery": {
+                    "Min": 18,
+                    "Max": 29
+                },
+                "Carryout": {
+                    "Min": 9,
+                    "Max": 19
+                }
+            },
+            "StoreCoordinates": {
+                "StoreLatitude": "37.780585",
+                "StoreLongitude": "-122.47566"
+            },
+            "AllowPickupWindowOrders": false,
+            "ContactlessDelivery": "AVAILABLE",
+            "ContactlessCarryout": "DISABLED",
+            "IsOpen": true,
+            "ServiceIsOpen": {
+                "Carryout": true,
+                "Delivery": true,
+                "DriveUpCarryout": true
+            },
+            "Address": {
+                "Street": "5200 Geary Blvd Ste D",
+                "City": "San Francisco",
+                "Region": "CA",
+                "PostalCode": "94118"
+            }
+        },
+        {
+            "StoreID": "7764",
+            "IsDeliveryStore": false,
+            "Phone": "415-776-0400",
+            "AddressDescription": "728 Geary St.\nSan Francisco, CA 94109\n",
+            "HolidaysDescription": "",
+            "HoursDescription": "Su-Th 10:30am-1:00am\nFr-Sa 10:30am-2:00am",
+            "ServiceHoursDescription": {
+                "Carryout": "Su-Th 10:30am-1:00am\nFr-Sa 10:30am-2:00am",
+                "Delivery": "Su-Th 10:30am-1:00am\nFr-Sa 10:30am-2:00am",
+                "DriveUpCarryout": "Su-Sa 10:30am-10:00pm",
+                "DeliverToMe": "Su-Sa 10:30am-9:00pm"
+            },
+            "IsOnlineCapable": true,
+            "IsOnlineNow": true,
+            "IsNEONow": false,
+            "IsSpanish": true,
+            "LocationInfo": "",
+            "LanguageLocationInfo": {
+                "en": "",
+                "es": ""
+            },
+            "AllowDeliveryOrders": true,
+            "AllowCarryoutOrders": true,
+            "AllowDuc": true,
+            "ServiceMethodEstimatedWaitMinutes": {
+                "Delivery": {
+                    "Min": 43,
+                    "Max": 58
+                },
+                "Carryout": {
+                    "Min": 10,
+                    "Max": 20
+                }
+            },
+            "StoreCoordinates": {
+                "StoreLatitude": "37.786816",
+                "StoreLongitude": "-122.415379"
+            },
+            "AllowPickupWindowOrders": false,
+            "ContactlessDelivery": "AVAILABLE",
+            "ContactlessCarryout": "DISABLED",
+            "IsOpen": true,
+            "ServiceIsOpen": {
+                "Carryout": true,
+                "Delivery": true,
+                "DriveUpCarryout": true
+            },
+            "Address": {
+                "Street": "728 Geary St.",
+                "City": "San Francisco",
+                "Region": "CA",
+                "PostalCode": "94109"
+            }
+        },
+        {
+            "StoreID": "8134",
+            "IsDeliveryStore": false,
+            "Phone": "415-647-8400",
+            "AddressDescription": "320 Bayshore Blvd.\nSan Francisco, CA 94124\n",
+            "HolidaysDescription": "",
+            "HoursDescription": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+            "ServiceHoursDescription": {
+                "Carryout": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "Delivery": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "DriveUpCarryout": "Su-Sa 11:00am-10:00pm",
+                "DeliverToMe": "Su-Sa 10:30am-9:00pm"
+            },
+            "IsOnlineCapable": true,
+            "IsOnlineNow": true,
+            "IsNEONow": false,
+            "IsSpanish": true,
+            "LocationInfo": "",
+            "LanguageLocationInfo": {
+                "en": "",
+                "es": ""
+            },
+            "AllowDeliveryOrders": true,
+            "AllowCarryoutOrders": true,
+            "AllowDuc": true,
+            "ServiceMethodEstimatedWaitMinutes": {
+                "Delivery": {
+                    "Min": 30,
+                    "Max": 40
+                },
+                "Carryout": {
+                    "Min": 16,
+                    "Max": 21
+                }
+            },
+            "StoreCoordinates": {
+                "StoreLatitude": "37.7429",
+                "StoreLongitude": "-122.406"
+            },
+            "AllowPickupWindowOrders": false,
+            "ContactlessDelivery": "AVAILABLE",
+            "ContactlessCarryout": "DISABLED",
+            "IsOpen": true,
+            "ServiceIsOpen": {
+                "Carryout": true,
+                "Delivery": true,
+                "DriveUpCarryout": true
+            },
+            "Address": {
+                "Street": "320 Bayshore Blvd.",
+                "City": "San Francisco",
+                "Region": "CA",
+                "PostalCode": "94124"
+            }
+        },
+        {
+            "StoreID": "7935",
+            "IsDeliveryStore": false,
+            "Phone": "650-994-9440",
+            "AddressDescription": "2408 Junipero Serra Blvd\nDaly City, CA 94015\n",
+            "HolidaysDescription": "",
+            "HoursDescription": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+            "ServiceHoursDescription": {
+                "Carryout": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "Delivery": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "DriveUpCarryout": "Su-Sa 4:00pm-9:00pm",
+                "DeliverToMe": "Su-Sa 10:30am-9:00pm"
+            },
+            "IsOnlineCapable": true,
+            "IsOnlineNow": true,
+            "IsNEONow": false,
+            "IsSpanish": true,
+            "LocationInfo": "",
+            "LanguageLocationInfo": {
+                "en": "",
+                "es": ""
+            },
+            "AllowDeliveryOrders": true,
+            "AllowCarryoutOrders": true,
+            "AllowDuc": true,
+            "ServiceMethodEstimatedWaitMinutes": {
+                "Delivery": {
+                    "Min": 18,
+                    "Max": 29
+                },
+                "Carryout": {
+                    "Min": 9,
+                    "Max": 19
+                }
+            },
+            "StoreCoordinates": {
+                "StoreLatitude": "37.6931",
+                "StoreLongitude": "-122.471"
+            },
+            "AllowPickupWindowOrders": false,
+            "ContactlessDelivery": "AVAILABLE",
+            "ContactlessCarryout": "DISABLED",
+            "IsOpen": true,
+            "ServiceIsOpen": {
+                "Carryout": true,
+                "Delivery": true,
+                "DriveUpCarryout": true
+            },
+            "Address": {
+                "Street": "2408 Junipero Serra Blvd",
+                "City": "Daly City",
+                "Region": "CA",
+                "PostalCode": "94015"
+            }
+        },
+        {
+            "StoreID": "8217",
+            "IsDeliveryStore": false,
+            "Phone": "415-988-7407",
+            "AddressDescription": "2665 Geneva Avenue\nDaly City, CA 94014\n",
+            "HolidaysDescription": "",
+            "HoursDescription": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+            "ServiceHoursDescription": {
+                "Carryout": "Su-Th 10:30am-10:00pm\nFr-Sa 10:30am-11:00pm",
+                "Delivery": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "DriveUpCarryout": "Su-Sa 12:00pm-9:00pm",
+                "DeliverToMe": "Su-Sa 10:30am-9:00pm"
+            },
+            "IsOnlineCapable": true,
+            "IsOnlineNow": true,
+            "IsNEONow": false,
+            "IsSpanish": true,
+            "LocationInfo": "",
+            "LanguageLocationInfo": {
+                "en": ""
+            },
+            "AllowDeliveryOrders": true,
+            "AllowCarryoutOrders": true,
+            "AllowDuc": true,
+            "ServiceMethodEstimatedWaitMinutes": {
+                "Delivery": {
+                    "Min": 18,
+                    "Max": 29
+                },
+                "Carryout": {
+                    "Min": 9,
+                    "Max": 14
+                }
+            },
+            "StoreCoordinates": {
+                "StoreLatitude": "37.707662",
+                "StoreLongitude": "-122.416055"
+            },
+            "AllowPickupWindowOrders": false,
+            "ContactlessDelivery": "AVAILABLE",
+            "ContactlessCarryout": "DISABLED",
+            "IsOpen": true,
+            "ServiceIsOpen": {
+                "Carryout": true,
+                "Delivery": true,
+                "DriveUpCarryout": true
+            },
+            "Address": {
+                "Street": "2665 Geneva Avenue",
+                "City": "Daly City",
+                "Region": "CA",
+                "PostalCode": "94014"
+            }
+        },
+        {
+            "StoreID": "7937",
+            "IsDeliveryStore": false,
+            "Phone": "650-875-9440",
+            "AddressDescription": "1158 Mission Road\nSouth San Francisco, CA 94080\n",
+            "HolidaysDescription": "",
+            "HoursDescription": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+            "ServiceHoursDescription": {
+                "Carryout": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "Delivery": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "DriveUpCarryout": "Su-Sa 12:00pm-9:00pm",
+                "DeliverToMe": "Su-Sa 10:30am-9:00pm"
+            },
+            "IsOnlineCapable": true,
+            "IsOnlineNow": true,
+            "IsNEONow": false,
+            "IsSpanish": true,
+            "LocationInfo": "",
+            "LanguageLocationInfo": {
+                "en": "",
+                "es": ""
+            },
+            "AllowDeliveryOrders": true,
+            "AllowCarryoutOrders": true,
+            "AllowDuc": true,
+            "ServiceMethodEstimatedWaitMinutes": {
+                "Delivery": {
+                    "Min": 18,
+                    "Max": 29
+                },
+                "Carryout": {
+                    "Min": 9,
+                    "Max": 19
+                }
+            },
+            "StoreCoordinates": {
+                "StoreLatitude": "37.6613",
+                "StoreLongitude": "-122.439"
+            },
+            "AllowPickupWindowOrders": false,
+            "ContactlessDelivery": "AVAILABLE",
+            "ContactlessCarryout": "DISABLED",
+            "IsOpen": true,
+            "ServiceIsOpen": {
+                "Carryout": true,
+                "Delivery": true,
+                "DriveUpCarryout": true
+            },
+            "Address": {
+                "Street": "1158 Mission Road",
+                "City": "South San Francisco",
+                "Region": "CA",
+                "PostalCode": "94080"
+            }
+        },
+        {
+            "StoreID": "7919",
+            "IsDeliveryStore": false,
+            "Phone": "650-355-7300",
+            "AddressDescription": "1301 Palmetto Ave\nPacifica, CA 94044\n",
+            "HolidaysDescription": "",
+            "HoursDescription": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+            "ServiceHoursDescription": {
+                "Carryout": "Su-Sa 10:30am-10:00pm",
+                "Delivery": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "DriveUpCarryout": "Su-Sa 4:00pm-9:00pm",
+                "DeliverToMe": "Su-Sa 10:30am-9:00pm"
+            },
+            "IsOnlineCapable": true,
+            "IsOnlineNow": true,
+            "IsNEONow": false,
+            "IsSpanish": true,
+            "LocationInfo": "",
+            "LanguageLocationInfo": {
+                "en": "",
+                "es": ""
+            },
+            "AllowDeliveryOrders": true,
+            "AllowCarryoutOrders": true,
+            "AllowDuc": true,
+            "ServiceMethodEstimatedWaitMinutes": {
+                "Delivery": {
+                    "Min": 18,
+                    "Max": 29
+                },
+                "Carryout": {
+                    "Min": 14,
+                    "Max": 24
+                }
+            },
+            "StoreCoordinates": {
+                "StoreLatitude": "37.640602",
+                "StoreLongitude": "-122.492167"
+            },
+            "AllowPickupWindowOrders": false,
+            "ContactlessDelivery": "AVAILABLE",
+            "ContactlessCarryout": "DISABLED",
+            "IsOpen": true,
+            "ServiceIsOpen": {
+                "Carryout": true,
+                "Delivery": true,
+                "DriveUpCarryout": true
+            },
+            "Address": {
+                "Street": "1301 Palmetto Ave",
+                "City": "Pacifica",
+                "Region": "CA",
+                "PostalCode": "94044"
+            }
+        },
+        {
+            "StoreID": "8102",
+            "IsDeliveryStore": false,
+            "Phone": "415-381-1900",
+            "AddressDescription": "247 Shoreline Highway\nMill Valley, CA 94941\n",
+            "HolidaysDescription": "",
+            "HoursDescription": "Su-Th 11:00am-11:00pm\nFr-Sa 11:00am-1:00am",
+            "ServiceHoursDescription": {
+                "Carryout": "Su-Sa 10:30am-10:00pm",
+                "Delivery": "Su-Th 11:00am-11:00pm\nFr-Sa 11:00am-1:00am",
+                "DriveUpCarryout": "Su-Sa 11:00am-10:00pm",
+                "DeliverToMe": "Su-Sa 10:30am-9:00pm"
+            },
+            "IsOnlineCapable": true,
+            "IsOnlineNow": true,
+            "IsNEONow": false,
+            "IsSpanish": true,
+            "LocationInfo": "",
+            "LanguageLocationInfo": {
+                "en": "",
+                "es": ""
+            },
+            "AllowDeliveryOrders": true,
+            "AllowCarryoutOrders": true,
+            "AllowDuc": true,
+            "ServiceMethodEstimatedWaitMinutes": {
+                "Delivery": {
+                    "Min": 18,
+                    "Max": 29
+                },
+                "Carryout": {
+                    "Min": 15,
+                    "Max": 20
+                }
+            },
+            "StoreCoordinates": {
+                "StoreLatitude": "37.881332",
+                "StoreLongitude": "-122.524634"
+            },
+            "AllowPickupWindowOrders": false,
+            "ContactlessDelivery": "AVAILABLE",
+            "ContactlessCarryout": "DISABLED",
+            "IsOpen": true,
+            "ServiceIsOpen": {
+                "Carryout": true,
+                "Delivery": true,
+                "DriveUpCarryout": true
+            },
+            "Address": {
+                "Street": "247 Shoreline Highway",
+                "City": "Mill Valley",
+                "Region": "CA",
+                "PostalCode": "94941"
+            }
+        },
+        {
+            "StoreID": "8527",
+            "IsDeliveryStore": false,
+            "Phone": "510-452-2600",
+            "AddressDescription": "314 Broadway\nOakland, CA 94607\nID & Card are REQUIRED for ALL Credit Card Orders * select toppings are subject to surcharge",
+            "HolidaysDescription": "",
+            "HoursDescription": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+            "ServiceHoursDescription": {
+                "Carryout": "Su-Sa 10:30am-10:00pm",
+                "Delivery": "Su-Th 10:30am-12:00am\nFr-Sa 10:30am-1:00am",
+                "DriveUpCarryout": "Su-Fr 10:30am-10:00pm\nSa 10:30pm-10:00pm",
+                "DeliverToMe": "Su-Sa 10:30am-9:00pm"
+            },
+            "IsOnlineCapable": true,
+            "IsOnlineNow": true,
+            "IsNEONow": true,
+            "IsSpanish": true,
+            "LocationInfo": "ID & Card are REQUIRED for ALL Credit Card Orders * select toppings are subject to surcharge",
+            "LanguageLocationInfo": {
+                "en": "ID & Card are REQUIRED for ALL Credit Card Orders * select toppings are subject to surcharge",
+                "es": ""
+            },
+            "AllowDeliveryOrders": true,
+            "AllowCarryoutOrders": true,
+            "AllowDuc": true,
+            "ServiceMethodEstimatedWaitMinutes": {
+                "Delivery": {
+                    "Min": 18,
+                    "Max": 29
+                },
+                "Carryout": {
+                    "Min": 9,
+                    "Max": 14
+                }
+            },
+            "StoreCoordinates": {
+                "StoreLatitude": "37.7969",
+                "StoreLongitude": "-122.276"
+            },
+            "AllowPickupWindowOrders": false,
+            "ContactlessDelivery": "AVAILABLE",
+            "ContactlessCarryout": "DISABLED",
+            "IsOpen": true,
+            "ServiceIsOpen": {
+                "Carryout": true,
+                "Delivery": true,
+                "DriveUpCarryout": true
+            },
+            "Address": {
+                "Street": "314 Broadway",
+                "City": "Oakland",
+                "Region": "CA",
+                "PostalCode": "94607"
+            }
+        }
+    ]
+}

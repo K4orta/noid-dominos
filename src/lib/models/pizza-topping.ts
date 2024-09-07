@@ -44,6 +44,8 @@ export class PizzaTopping implements IPizzaTopping {
       isLocal: this.isLocal,
       tags: this.tags,
       ...(this.exclusivityGroup && { exclusivityGroup: this.exclusivityGroup }),
+      leftAmount: this.leftAmount,
+      rightAmount: this.rightAmount,
     };
   }
 

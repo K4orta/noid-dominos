@@ -20,21 +20,32 @@ export class Pizza implements IPizza {
 
   addTopping(topping: PizzaTopping) {
     this.toppings.push(topping);
+    return this;
   }
 
   setCrust(crust: PizzaCrust) {
     this.crust = crust;
+    return this;
   }
 
   setSauce(sauce: PizzaTopping) {
     this.sauce = sauce;
+    return this;
+  }
+
+  toJson() {
+    return {
+      toppings: this.toppings.map((topping) => topping.toJson()),
+      sauce: this.sauce.toJson(),
+      crust: this.crust.toJson(),
+    };
   }
 
   toDominos() {
     return {
       code: this.crust.code,
       options: {
-        [this.sauce.code]: { '1/1': '1' },
+        ...this.sauce.toDominos(),
         ...this.toppings.reduce((prev, current) => {
           return {
             ...prev,
